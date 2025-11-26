@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ききこさんのポームページ</title>
+    <link rel="icon" href="KIKIKO.webp" type="image/webp">
+    <style>
+        body {
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* 右下に小さく表示されるアイコン */
+        .small-icon {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 40px; 
+            height: 40px;
+        }
+
+        /* h4 を全体中央、でも少し左へ寄せたい */
+        .youtube-title {
+            width: 100%;
+            text-align: center;
+            transform: translateX(-20px);
+        }
+
+        #youtube, #discord {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>ききこさんのポームページ</h1>
+
+    <div class="img-container">
+        <img src="KIKIKO.webp" id="youtube" width="300" />
+        <img src="https://www.bing.com/th/id/OIP.jOk-r_8Et_l7Mj2CHFl5WwAAAA?w=183&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="small-icon" id="discord">
+    </div>
+
+    <h4 class="youtube-title">↑ききこyoutube discord↑</h4>
+
+    <div id="latestVideo"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
